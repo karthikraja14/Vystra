@@ -32,7 +32,7 @@ export default function Process() {
     <section className="section process" id="process">
       <div className="wrap">
         <Reveal className="section__head">
-          <span className="eyebrow"><span className="num">03</span> How We Work</span>
+          <span className="eyebrow"><span className="num">04</span> How We Work</span>
           <h2 className="section__title">
             A calm, clear path from <span className="serif gold">idea to launch.</span>
           </h2>

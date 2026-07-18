@@ -2,6 +2,7 @@ import useLenis from './hooks/useLenis.js'
 import Nav from './sections/Nav.jsx'
 import Hero from './sections/Hero.jsx'
 import Marquee from './sections/Marquee.jsx'
+import Ethos from './sections/Ethos.jsx'
 import Work from './sections/Work.jsx'
 import Services from './sections/Services.jsx'
 import Process from './sections/Process.jsx'
@@ -24,6 +25,7 @@ export default function App() {
       <main>
         <Hero />
         <Marquee />
+        <Ethos />
         <Work />
         <Services />
         <Process />

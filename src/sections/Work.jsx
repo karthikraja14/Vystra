@@ -48,7 +48,7 @@ export default function Work() {
     <section className="section work" id="work" onMouseMove={onMove}>
       <div className="wrap">
         <Reveal className="section__head">
-          <span className="eyebrow"><span className="num">01</span> Selected Work</span>
+          <span className="eyebrow"><span className="num">02</span> Selected Work</span>
           <h2 className="section__title">
             Proof over <span className="serif gold">promises.</span>
           </h2>

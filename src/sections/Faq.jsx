@@ -57,7 +57,7 @@ export default function Faq() {
     <section className="section faq-section" id="faq">
       <div className="wrap faq__layout">
         <Reveal className="faq__intro">
-          <span className="eyebrow"><span className="num">06</span> FAQ</span>
+          <span className="eyebrow"><span className="num">07</span> FAQ</span>
           <h2 className="section__title">
             Questions, <span className="serif gold">answered.</span>
           </h2>

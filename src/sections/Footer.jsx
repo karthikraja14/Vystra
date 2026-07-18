@@ -17,7 +17,7 @@ export default function Footer() {
             <span className="logo__txt">Vystra</span>
           </a>
           <p className="footer__tag">
-            Websites that <span className="serif gold">print revenue.</span>
+            Design that sells. <span className="serif gold">Code that scales.</span>
           </p>
         </div>
 

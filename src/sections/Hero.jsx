@@ -28,7 +28,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: EASE, delay: 0.4 }}
         >
-          <span className="dot" /> Now booking — 2 slots left this month
+          <span className="dot" /> Bookings open — accepting new projects
         </motion.div>
 
         <h1 className="hero__title">

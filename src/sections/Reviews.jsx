@@ -26,7 +26,7 @@ export default function Reviews() {
     <section className="section reviews" id="reviews">
       <div className="wrap">
         <Reveal className="section__head">
-          <span className="eyebrow"><span className="num">05</span> Kind Words</span>
+          <span className="eyebrow"><span className="num">06</span> Kind Words</span>
           <h2 className="section__title">
             Clients who'd <span className="serif gold">recommend us.</span>
           </h2>

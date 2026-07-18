@@ -38,7 +38,7 @@ export default function Contact() {
     <section className="section contact" id="contact">
       <div className="wrap contact__layout">
         <Reveal className="contact__left">
-          <span className="eyebrow"><span className="num">07</span> Start a Project</span>
+          <span className="eyebrow"><span className="num">08</span> Start a Project</span>
           <h2 className="section__title">
             Let's build something <span className="serif gold">unforgettable.</span>
           </h2>

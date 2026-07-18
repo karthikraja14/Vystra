@@ -44,7 +44,7 @@ export default function Services() {
     <section className="section services" id="services">
       <div className="wrap">
         <Reveal className="section__head">
-          <span className="eyebrow"><span className="num">02</span> Capabilities</span>
+          <span className="eyebrow"><span className="num">03</span> Capabilities</span>
           <h2 className="section__title">
             Everything you need to <span className="serif gold">win online.</span>
           </h2>

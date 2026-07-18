@@ -39,7 +39,7 @@ export default function Pricing() {
     <section className="section pricing" id="pricing">
       <div className="wrap">
         <Reveal className="section__head">
-          <span className="eyebrow"><span className="num">04</span> Pricing</span>
+          <span className="eyebrow"><span className="num">05</span> Pricing</span>
           <h2 className="section__title">
             Simple, honest <span className="serif gold">pricing.</span>
           </h2>
