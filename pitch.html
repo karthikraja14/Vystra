@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vystra — What We Do For You</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:#0A0F1E;color:#F9FAFB;line-height:1.6}
+.slide{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:60px 40px;position:relative;overflow:hidden}
+.slide:nth-child(even){background:#0F172A}
+.inner{max-width:900px;width:100%;text-align:center}
+h1{font-size:clamp(2rem,5vw,4rem);font-weight:800;line-height:1.1;margin-bottom:24px}
+h2{font-size:clamp(1.6rem,4vw,2.8rem);font-weight:700;line-height:1.15;margin-bottom:20px}
+h3{font-size:1.3rem;font-weight:700;margin-bottom:12px}
+.gold{color:#D4A853}
+p{font-size:1.05rem;color:#94A3B8;max-width:600px;margin:0 auto 24px;line-height:1.7}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;text-align:left;margin:32px 0}
+.box{background:rgba(212,168,83,.04);border:1px solid rgba(212,168,83,.1);border-radius:14px;padding:28px}
+.box h3{font-size:1.05rem;color:#D4A853}
+.box p{font-size:.9rem;margin:0}
+.box ul{margin:0;padding-left:18px}
+.box li{font-size:.88rem;color:#94A3B8;margin-bottom:4px}
+.stat-row{display:flex;justify-content:center;gap:48px;margin:36px 0;flex-wrap:wrap}
+.stat{text-align:center}
+.stat b{display:block;font-size:2.5rem;font-weight:800;color:#D4A853}
+.stat span{font-size:.8rem;color:#94A3B8;text-transform:uppercase;letter-spacing:1px}
+.price-row{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:32px 0;text-align:center}
+.price-box{background:rgba(212,168,83,.03);border:1px solid rgba(212,168,83,.1);border-radius:14px;padding:28px 20px}
+.price-box.pop{border-color:rgba(212,168,83,.3);background:rgba(212,168,83,.06)}
+.price-box h3{color:#D4A853;font-size:.85rem;text-transform:uppercase;letter-spacing:2px}
+.price-box .amt{font-size:2.2rem;font-weight:800;margin:8px 0 4px}
+.price-box .per{font-size:.8rem;color:#475569}
+.price-box ul{text-align:left;margin-top:16px;padding-left:0;list-style:none}
+.price-box li{font-size:.82rem;color:#94A3B8;padding:4px 0}
+.price-box li::before{content:'✓ ';color:#D4A853}
+.logo{font-size:1.2rem;font-weight:800;letter-spacing:4px;color:#D4A853;margin-bottom:8px}
+.sub{font-size:.9rem;color:#475569;margin-bottom:40px}
+.cta-btn{display:inline-block;padding:16px 40px;background:linear-gradient(135deg,#D4A853,#B8860B);color:#0A0F1E;font-weight:700;font-size:1rem;border-radius:10px;text-decoration:none;margin-top:16px}
+.cta-btn:hover{opacity:.9}
+.badge{display:inline-block;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#D4A853;background:rgba(212,168,83,.08);border:1px solid rgba(212,168,83,.12);padding:6px 18px;border-radius:100px;margin-bottom:20px}
+.process-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:32px 0;text-align:center}
+.ps{padding:24px 16px}
+.ps-n{font-size:2rem;font-weight:800;color:#D4A853;opacity:.3}
+.ps h3{font-size:.95rem;margin:8px 0 6px}
+.ps p{font-size:.82rem;margin:0}
+.footer-p{text-align:center;padding:40px;font-size:.85rem;color:#475569}
+@media(max-width:768px){
+  .price-row,.process-steps{grid-template-columns:1fr}
+  .stat-row{gap:24px}
+  .slide{padding:40px 20px}
+}
+</style>
+</head>
+<body>
+
+<!-- Slide 1: Title -->
+<div class="slide">
+ <div class="inner">
+  <div class="logo">VYSTRA</div>
+  <p class="sub">Premium Web Development Agency</p>
+  <h1>Your Business Deserves<br>a Website That <span class="gold">Prints Revenue</span></h1>
+  <p>We don't just build websites. We build growth engines that convert visitors into paying customers.</p>
+  <div class="stat-row">
+   <div class="stat"><b>50+</b><span>Projects Delivered</span></div>
+   <div class="stat"><b>30+</b><span>Happy Clients</span></div>
+   <div class="stat"><b>3x</b><span>Avg ROI Increase</span></div>
+   <div class="stat"><b>99%</b><span>Client Satisfaction</span></div>
+  </div>
+ </div>
+</div>
+
+<!-- Slide 2: Problem -->
+<div class="slide">
+ <div class="inner">
+  <span class="badge">The Problem</span>
+  <h2>Your Competitors Are<br><span class="gold">Already Online</span></h2>
+  <p>88% of consumers research online before buying. If your website is slow, ugly, or non-existent — you're losing customers every single day.</p>
+  <div class="grid">
+   <div class="box"><h3>❌ No Website</h3><p>Invisible to 88% of potential customers who search online first.</p></div>
+   <div class="box"><h3>❌ Slow Website</h3><p>53% of visitors leave if a page takes more than 3 seconds to load.</p></div>
+   <div class="box"><h3>❌ Ugly Website</h3><p>75% of users judge credibility based on website design alone.</p></div>
+   <div class="box"><h3>❌ No SEO</h3><p>91% of pages get zero traffic from Google. You need to rank.</p></div>
+  </div>
+ </div>
+</div>
+
+<!-- Slide 3: Solution -->
+<div class="slide">
+ <div class="inner">
+  <span class="badge">The Solution</span>
+  <h2>What <span class="gold">Vystra</span> Does For You</h2>
+  <div class="grid">
+   <div class="box">
+    <h3>🖥️ Website Development</h3>
+    <ul><li>Custom design tailored to your brand</li><li>Mobile responsive on all devices</li><li>Fast loading (98+ PageSpeed)</li><li>CMS so you can update content</li></ul>
+   </div>
+   <div class="box">
+    <h3>🔍 SEO Optimization</h3>
+    <ul><li>Rank on Google for your keywords</li><li>Technical SEO setup</li><li>Content strategy</li><li>Monthly performance reports</li></ul>
+   </div>
+   <div class="box">
+    <h3>🎨 UI/UX Design</h3>
+    <ul><li>Research-backed design</li><li>Conversion-focused layouts</li><li>Brand-consistent visuals</li><li>Smooth animations</li></ul>
+   </div>
+   <div class="box">
+    <h3>📈 Digital Marketing</h3>
+    <ul><li>Google Ads management</li><li>Social media marketing</li><li>Content creation</li><li>Analytics & reporting</li></ul>
+   </div>
+   <div class="box">
+    <h3>⚡ Performance</h3>
+    <ul><li>Core Web Vitals optimization</li><li>Image & asset compression</li><li>CDN & caching setup</li><li>Speed monitoring</li></ul>
+   </div>
+   <div class="box">
+    <h3>🛡️ Maintenance</h3>
+    <ul><li>24/7 uptime monitoring</li><li>Security patches & updates</li><li>Regular backups</li><li>Priority bug fixes</li></ul>
+   </div>
+  </div>
+ </div>
+</div>
+
+<!-- Slide 4: Process -->
+<div class="slide">
+ <div class="inner">
+  <span class="badge">How We Work</span>
+  <h2>Simple Process,<br><span class="gold">Powerful Results</span></h2>
+  <p>From idea to launch in 4 clear steps. No surprises, no hidden costs.</p>
+  <div class="process-steps">
+   <div class="ps"><div class="ps-n">01</div><h3>Discovery</h3><p>Free 30-min call to understand your business &amp; goals</p></div>
+   <div class="ps"><div class="ps-n">02</div><h3>Design</h3><p>Custom mockups you review &amp; approve before development</p></div>
+   <div class="ps"><div class="ps-n">03</div><h3>Develop</h3><p>We build with clean code, SEO &amp; performance baked in</p></div>
+   <div class="ps"><div class="ps-n">04</div><h3>Launch</h3><p>Deploy, monitor &amp; optimize for continuous growth</p></div>
+  </div>
+ </div>
+</div>
+
+<!-- Slide 5: Pricing -->
+<div class="slide">
+ <div class="inner">
+  <span class="badge">Investment</span>
+  <h2>Transparent <span class="gold">Pricing</span></h2>
+  <p>Choose the plan that fits your business. No hidden fees.</p>
+  <div class="price-row">
+   <div class="price-box">
+    <h3>Starter</h3>
+    <div class="amt">₹14,999</div>
+    <div class="per">one-time</div>
+    <ul><li>Up to 5 Pages</li><li>Mobile Responsive</li><li>Basic SEO</li><li>Contact Form</li><li>1 Month Support</li></ul>
+   </div>
+   <div class="price-box pop">
+    <h3>Professional</h3>
+    <div class="amt">₹34,999</div>
+    <div class="per">one-time · Best Value</div>
+    <ul><li>Up to 15 Pages</li><li>Custom UI/UX</li><li>Advanced SEO</li><li>Animations</li><li>CMS Integration</li><li>3 Months Support</li></ul>
+   </div>
+   <div class="price-box">
+    <h3>Enterprise</h3>
+    <div class="amt">₹74,999+</div>
+    <div class="per">starting at</div>
+    <ul><li>Unlimited Pages</li><li>Full Custom Dev</li><li>E-Commerce</li><li>6 Months Support</li><li>Dedicated Manager</li><li>API Integrations</li></ul>
+   </div>
+  </div>
+  <p style="font-size:.85rem;color:#475569">Add-ons: SEO ₹4,999/mo · Maintenance ₹2,999/mo · Social Media ₹7,999/mo · Branding ₹9,999</p>
+ </div>
+</div>
+
+<!-- Slide 6: Case Study -->
+<div class="slide">
+ <div class="inner">
+  <span class="badge">Case Study</span>
+  <h2>DreamzDezignerz — <span class="gold">Real Results</span></h2>
+  <p>We built a complete web presence for this interior design firm. Here's what happened:</p>
+  <div class="stat-row">
+   <div class="stat"><b>3x</b><span>More Leads</span></div>
+   <div class="stat"><b>98</b><span>PageSpeed Score</span></div>
+   <div class="stat"><b>#1</b><span>Google Ranking</span></div>
+   <div class="stat"><b>Active</b><span>Subscriber</span></div>
+  </div>
+  <p style="margin-top:20px"><em>"Vystra completely transformed our online presence. Our leads tripled within two months. Best investment we've ever made."</em></p>
+  <p style="color:#D4A853;font-weight:600;font-size:.9rem">— DreamzDezignerz, Interior Design Firm</p>
+ </div>
+</div>
+
+<!-- Slide 7: CTA -->
+<div class="slide">
+ <div class="inner">
+  <div class="logo">VYSTRA</div>
+  <h1>Let's Build Something<br><span class="gold">Extraordinary</span></h1>
+  <p>Your competitors are investing in their online presence. It's time you did too.</p>
+  <a href="https://vystra.in/#contact" class="cta-btn">Get Free Consultation →</a>
+  <div style="margin-top:40px">
+   <p style="font-size:.9rem;color:#94A3B8;margin-bottom:8px"><strong style="color:#fff">Email:</strong> admin@vystra.in</p>
+   <p style="font-size:.9rem;color:#94A3B8;margin-bottom:8px"><strong style="color:#fff">Phone:</strong> +91 90873 40087</p>
+   <p style="font-size:.9rem;color:#94A3B8"><strong style="color:#fff">Website:</strong> vystra.in</p>
+  </div>
+ </div>
+</div>
+
+<div class="footer-p">© 2026 Vystra. All rights reserved.</div>
+</body>
+</html>
