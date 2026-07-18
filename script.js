@@ -1,32 +1,21 @@
 document.addEventListener('DOMContentLoaded',()=>{
-  // Nav
-  const nav=document.getElementById('nav');
-  window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>50),{passive:true});
-
-  // Burger
-  const burger=document.getElementById('burger'),nr=document.getElementById('navR');
-  burger.addEventListener('click',()=>{burger.classList.toggle('on');nr.classList.toggle('open');document.body.style.overflow=nr.classList.contains('open')?'hidden':''});
-  nr.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{burger.classList.remove('on');nr.classList.remove('open');document.body.style.overflow=''}));
-
-  // Smooth scroll
+  const n=document.getElementById('N');
+  window.addEventListener('scroll',()=>n.classList.toggle('s',scrollY>50),{passive:true});
+  const bg=document.getElementById('BG'),nr=document.getElementById('NR');
+  bg.addEventListener('click',()=>{bg.classList.toggle('on');nr.classList.toggle('open');document.body.style.overflow=nr.classList.contains('open')?'hidden':''});
+  nr.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{bg.classList.remove('on');nr.classList.remove('open');document.body.style.overflow=''}));
   document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'})}}));
-
-  // WhatsApp
   const wa=document.getElementById('wa');
   window.addEventListener('scroll',()=>wa.classList.toggle('show',scrollY>400),{passive:true});
-  document.getElementById('waBtn').addEventListener('click',()=>window.open('https://wa.me/919087340087?text='+encodeURIComponent("Hi Vystra! I'm interested in your services. Can we discuss?"),'_blank','noopener,noreferrer'));
-
-  // Scroll reveal
-  const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){const d=parseFloat(e.target.dataset.d||0)*.1;setTimeout(()=>e.target.classList.add('v'),d*1000);obs.unobserve(e.target)}})},{threshold:.06,rootMargin:'0px 0px -30px 0px'});
-  document.querySelectorAll('.a').forEach(el=>obs.observe(el));
-
-  // Counters
-  const counted=new Set();
-  const cobs=new IntersectionObserver(es=>{es.forEach(e=>{if(!e.isIntersecting)return;e.target.querySelectorAll('[data-c]').forEach(c=>{if(counted.has(c))return;counted.add(c);const t=+c.dataset.c,d=1400,s=performance.now();(function f(n){const p=Math.min((n-s)/d,1);c.textContent=Math.round((1-Math.pow(1-p,3))*t);if(p<1)requestAnimationFrame(f)})(s)});cobs.unobserve(e.target)})},{threshold:.3});
-  document.querySelectorAll('.hero-proof,.nums-w').forEach(el=>cobs.observe(el));
-
-  // Form
-  const form=document.getElementById('cform'),msg=document.getElementById('fmsg');
+  document.getElementById('waB').addEventListener('click',()=>window.open('https://wa.me/919087340087?text='+encodeURIComponent("Hi Vystra! I'm interested in your services."),'_blank','noopener,noreferrer'));
+  const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){const d=parseFloat(e.target.dataset.d||0)*.08;setTimeout(()=>e.target.classList.add('v'),d*1000);obs.unobserve(e.target)}})},{threshold:.05,rootMargin:'0px 0px -20px 0px'});
+  document.querySelectorAll('.an').forEach(el=>obs.observe(el));
+  const ct=new Set();
+  const co=new IntersectionObserver(es=>{es.forEach(e=>{if(!e.isIntersecting)return;e.target.querySelectorAll('[data-c]').forEach(c=>{if(ct.has(c))return;ct.add(c);const t=+c.dataset.c,d=1200,s=performance.now();(function f(n){const p=Math.min((n-s)/d,1);c.textContent=Math.round((1-Math.pow(1-p,3))*t);if(p<1)requestAnimationFrame(f)})(s)});co.unobserve(e.target)})},{threshold:.3});
+  document.querySelectorAll('.H-tag,.NM').forEach(el=>co.observe(el));
+  // Observe hero proof stats too
+  const hp=document.querySelector('.HW');if(hp)co.observe(hp);
+  const form=document.getElementById('CF'),msg=document.getElementById('FM');
   form.addEventListener('submit',async e=>{
     e.preventDefault();const fd=new FormData(form),d=Object.fromEntries(fd);
     if(!d.name||!d.email||!d.message){sh('Fill all required fields.','err');return}
@@ -36,9 +25,5 @@ document.addEventListener('DOMContentLoaded',()=>{
     const j=await r.json();if(j.success){sh("Sent! We'll reply within 24h.",'ok');form.reset()}else sh('Error. Email admin@vystra.in','err')}catch{sh('Network error. Email admin@vystra.in','err')}
     btn.disabled=false;btn.innerHTML='Send Message <span>→</span>';
   });
-  function sh(t,c){msg.textContent=t;msg.className='fmsg '+c;setTimeout(()=>{msg.textContent='';msg.className='fmsg'},5000)}
-
-  // Active nav
-  const secs=document.querySelectorAll('section[id]');
-  window.addEventListener('scroll',()=>{const s=scrollY+100;secs.forEach(sec=>{if(s>=sec.offsetTop&&s<sec.offsetTop+sec.offsetHeight){const id=sec.id;nr.querySelectorAll('a').forEach(a=>{a.style.color=a.getAttribute('href')==='#'+id?'var(--gd)':''})}})},{passive:true});
+  function sh(t,c){msg.textContent=t;msg.className='FM '+c;setTimeout(()=>{msg.textContent='';msg.className='FM'},5000)}
 });
