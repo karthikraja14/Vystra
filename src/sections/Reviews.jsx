@@ -3,21 +3,9 @@ import { Reveal } from '../components/Reveal.jsx'
 const REVIEWS = [
   {
     quote: 'Vystra turned our vague idea into a site that genuinely looks like a million bucks. Leads doubled within a month.',
-    name: 'Priya Sharma',
+    name: 'Pradeep Kumar',
     role: 'Founder, DreamzDezignerz',
-    initials: 'PS',
-  },
-  {
-    quote: 'Fast, communicative and the design taste is unreal. It doesn\'t look like every other template out there.',
-    name: 'Arjun Mehta',
-    role: 'CEO, Nova Labs',
-    initials: 'AM',
-  },
-  {
-    quote: 'They obsess over the tiny details most agencies skip. The animations and speed blew our team away.',
-    name: 'Sara Khan',
-    role: 'Marketing Lead, Brightly',
-    initials: 'SK',
+    initials: 'PK',
   },
 ]
 
@@ -28,11 +16,11 @@ export default function Reviews() {
         <Reveal className="section__head">
           <span className="eyebrow"><span className="num">06</span> Kind Words</span>
           <h2 className="section__title">
-            Clients who'd <span className="serif gold">recommend us.</span>
+            What our clients <span className="serif gold">say.</span>
           </h2>
         </Reveal>
 
-        <div className="reviews__grid">
+        <div className={`reviews__grid ${REVIEWS.length === 1 ? 'reviews__grid--single' : ''}`}>
           {REVIEWS.map((r, i) => (
             <Reveal key={r.name} delay={i * 0.1} y={24}>
               <figure className="review">

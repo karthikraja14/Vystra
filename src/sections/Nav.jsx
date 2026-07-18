@@ -45,7 +45,10 @@ export default function Nav() {
       <div className="nav__inner wrap">
         <a href="#top" className="logo" onClick={(e) => go(e, '#top')}>
           <span className="logo__mark">V</span>
-          <span className="logo__txt">Vystra</span>
+          <span className="logo__col">
+            <span className="logo__txt">Vystra</span>
+            <span className="logo__tag">Digital product studio</span>
+          </span>
         </a>
 
         <nav className="nav__links">

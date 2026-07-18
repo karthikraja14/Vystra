@@ -3,7 +3,7 @@ import { Reveal } from '../components/Reveal.jsx'
 import Magnetic from '../components/Magnetic.jsx'
 
 // Get your free access key at https://web3forms.com (send to admin@vystra.in)
-const WEB3FORMS_KEY = 'YOUR_WEB3FORMS_KEY'
+const WEB3FORMS_KEY = '344a3cae-c5ad-4f3f-b8d6-79d16f158335'
 
 export default function Contact() {
   const [status, setStatus] = useState('idle') // idle | sending | done | error
@@ -54,7 +54,7 @@ export default function Contact() {
             </a>
             <a href="https://wa.me/919087340087" target="_blank" rel="noreferrer" className="contact__info-item">
               <span className="contact__info-label">WhatsApp</span>
-              <span className="contact__info-val">+91 90873 40087</span>
+              <span className="contact__info-val">Chat with us →</span>
             </a>
           </div>
         </Reveal>

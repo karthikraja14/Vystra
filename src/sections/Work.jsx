@@ -108,7 +108,7 @@ export default function Work() {
           </a>
         </Reveal>
 
-        <span className="work__label">Selected client work</span>
+        <span className="work__label">Recent work</span>
         <div className="rows" onMouseLeave={() => setHover(null)}>
           {CASES.map((c, i) => (
             <Reveal key={c.id} delay={i * 0.08} y={20}>
