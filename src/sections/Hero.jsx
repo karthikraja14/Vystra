@@ -32,9 +32,9 @@ export default function Hero() {
         </motion.div>
 
         <h1 className="hero__title">
-          <TextReveal text="We build websites that" delay={0.5} />
+          <TextReveal text="We design websites & products" delay={0.5} />
           <br />
-          <TextReveal text="don't just look good —" delay={0.75} />
+          <TextReveal text="that don't just look good —" delay={0.75} />
           <br />
           <span className="hero__accent">
             <TextReveal text="they" delay={1.0} />
@@ -48,8 +48,9 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, ease: EASE, delay: 1.3 }}
         >
-          Vystra is a boutique web studio for ambitious brands. Fast, distinctive,
-          conversion-obsessed sites — designed and shipped in weeks, not months.
+          Vystra is a digital product studio for ambitious brands. We design and build
+          high-converting websites, web &amp; mobile apps, and SaaS products — shipped in
+          weeks, not months.
         </motion.p>
 
         <motion.div

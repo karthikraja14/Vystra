@@ -42,7 +42,10 @@ export default function Footer() {
 
         <div className="footer__bottom">
           <span>© {YEAR} Vystra. All rights reserved.</span>
-          <span>Made with intent in India.</span>
+          <span className="footer__legal">
+            <a href="/privacy.html">Privacy Policy</a>
+            <span>Made with intent in India.</span>
+          </span>
         </div>
       </div>
     </footer>

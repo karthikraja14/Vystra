@@ -3,27 +3,27 @@ import { Reveal } from '../components/Reveal.jsx'
 const SERVICES = [
   {
     id: '01',
-    title: 'Landing Pages',
-    desc: 'High-converting single pages built to turn clicks into customers.',
+    title: 'Websites & Landing Pages',
+    desc: 'High-converting sites that turn clicks into customers and browsers into buyers.',
     tags: ['Design', 'Copy', 'CRO'],
   },
   {
     id: '02',
-    title: 'Business Websites',
-    desc: 'Multi-page sites that make small brands look like category leaders.',
-    tags: ['UX', 'CMS', 'SEO'],
+    title: 'Web & Mobile Apps',
+    desc: 'Product interfaces, dashboards and mobile apps that feel effortless to use.',
+    tags: ['React', 'UI', 'Mobile'],
   },
   {
     id: '03',
-    title: 'E-commerce',
-    desc: 'Fast, frictionless stores engineered to maximise average order value.',
-    tags: ['Shopify', 'Payments', 'Speed'],
+    title: 'SaaS & Product Builds',
+    desc: 'From MVP to full platform — we design, build and ship real software products.',
+    tags: ['MVP', 'Systems', 'Scale'],
   },
   {
     id: '04',
-    title: 'Web Apps & SaaS',
-    desc: 'Product interfaces and dashboards that feel effortless to use.',
-    tags: ['React', 'UI', 'Systems'],
+    title: 'E-commerce',
+    desc: 'Fast, frictionless stores engineered to maximise average order value.',
+    tags: ['Shopify', 'Payments', 'Speed'],
   },
   {
     id: '05',
@@ -33,8 +33,8 @@ const SERVICES = [
   },
   {
     id: '06',
-    title: 'Redesigns & SEO',
-    desc: 'Rebuild tired sites into modern, rank-worthy revenue machines.',
+    title: 'Redesign & SEO',
+    desc: 'Rebuild tired products into modern, rank-worthy revenue machines.',
     tags: ['Audit', 'Migrate', 'Rank'],
   },
 ]
