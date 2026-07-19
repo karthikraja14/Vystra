@@ -52,6 +52,21 @@ export default function Ethos() {
             </Reveal>
           ))}
         </div>
+
+        <Reveal className="ethos__founder" delay={0.1}>
+          <span className="ethos__founder-label">Led by</span>
+          <span className="ethos__founder-name">Karthik Raja</span>
+          <span className="ethos__founder-sep">·</span>
+          <span className="ethos__founder-role">Founder &amp; Lead Engineer</span>
+          <a
+            href="https://karthikraja.in"
+            target="_blank"
+            rel="noreferrer"
+            className="ethos__founder-link"
+          >
+            View portfolio ↗
+          </a>
+        </Reveal>
       </div>
     </section>
   )

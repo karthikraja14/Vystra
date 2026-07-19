@@ -416,6 +416,40 @@
   color: var(--muted);
   line-height: 1.5;
 }
+.ethos__founder {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 40px;
+  padding-top: 26px;
+  border-top: 1px solid var(--border);
+  font-size: 0.95rem;
+}
+.ethos__founder-label {
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+}
+.ethos__founder-name {
+  font-weight: 700;
+}
+.ethos__founder-sep {
+  color: var(--muted);
+}
+.ethos__founder-role {
+  color: var(--muted);
+}
+.ethos__founder-link {
+  margin-left: auto;
+  color: var(--gold);
+  font-weight: 600;
+  transition: opacity 0.3s;
+}
+.ethos__founder-link:hover {
+  opacity: 0.7;
+}
 
 /* ============ ROWS (work + services) ============ */
 .rows {

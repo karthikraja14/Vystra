@@ -5,15 +5,6 @@ import { Reveal } from '../components/Reveal.jsx'
 const CASES = [
   {
     id: '01',
-    name: 'Karthik Raja',
-    type: 'Founder portfolio',
-    year: '2025',
-    stat: '2.1s load time',
-    color: '#7db8e6',
-    href: 'https://karthikraja.in',
-  },
-  {
-    id: '02',
     name: 'DreamzDezignerz',
     type: 'Brand & website · client',
     year: '2025',
@@ -22,7 +13,7 @@ const CASES = [
     href: '#contact',
   },
   {
-    id: '03',
+    id: '02',
     name: 'Vystra Studio',
     type: 'This website',
     year: '2026',
