@@ -70,6 +70,17 @@ export default function Hero() {
             </a>
           </Magnetic>
         </motion.div>
+
+        <motion.div
+          className="hero__trust"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.9, ease: EASE, delay: 1.7 }}
+        >
+          <span><span className="hero__trust-dot" /> Free consultation</span>
+          <span><span className="hero__trust-dot" /> Reply within 24 hours</span>
+          <span><span className="hero__trust-dot" /> Fixed pricing, no surprises</span>
+        </motion.div>
       </motion.div>
 
       <motion.div

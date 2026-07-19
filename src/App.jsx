@@ -10,6 +10,7 @@ import Numbers from './sections/Numbers.jsx'
 import Pricing from './sections/Pricing.jsx'
 import Reviews from './sections/Reviews.jsx'
 import Faq from './sections/Faq.jsx'
+import Audit from './sections/Audit.jsx'
 import Contact from './sections/Contact.jsx'
 import Footer from './sections/Footer.jsx'
 import WhatsApp from './components/WhatsApp.jsx'
@@ -33,6 +34,7 @@ export default function App() {
         <Pricing />
         <Reviews />
         <Faq />
+        <Audit />
         <Contact />
       </main>
       <Footer />
