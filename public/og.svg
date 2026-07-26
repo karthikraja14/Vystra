@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B0C12"/>
+      <stop offset="1" stop-color="#08090E"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(920 120) rotate(130) scale(560)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D4A853" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#D4A853" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="120" y1="300" x2="900" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F0D08A"/>
+      <stop offset="1" stop-color="#C79A45"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect x="1" y="1" width="1198" height="628" rx="0" stroke="#1A1C28" stroke-width="2"/>
+
+  <!-- Logo mark -->
+  <rect x="96" y="86" width="72" height="72" rx="18" fill="url(#gold)"/>
+  <text x="132" y="138" font-family="Georgia, 'Times New Roman', serif" font-size="46" font-weight="700" fill="#0B0C12" text-anchor="middle">V</text>
+  <text x="188" y="126" font-family="'Segoe UI', system-ui, sans-serif" font-size="34" font-weight="800" fill="#EDEEF2">Vystra</text>
+  <text x="189" y="152" font-family="'Segoe UI', system-ui, sans-serif" font-size="17" font-weight="500" fill="#8A8D9E" letter-spacing="1">DIGITAL PRODUCT STUDIO</text>
+
+  <!-- Headline -->
+  <text x="96" y="330" font-family="'Segoe UI', system-ui, sans-serif" font-size="76" font-weight="800" fill="#EDEEF2">Websites &amp; products</text>
+  <text x="96" y="418" font-family="'Segoe UI', system-ui, sans-serif" font-size="76" font-weight="800" fill="#EDEEF2">that <tspan fill="url(#gold)" font-family="Georgia, serif" font-style="italic" font-weight="400">print revenue.</tspan></text>
+
+  <!-- Subline -->
+  <text x="98" y="480" font-family="'Segoe UI', system-ui, sans-serif" font-size="26" font-weight="500" fill="#8A8D9E">High-converting websites, apps &amp; SaaS — shipped in weeks, not months.</text>
+
+  <!-- Footer row -->
+  <text x="96" y="560" font-family="'Segoe UI', system-ui, sans-serif" font-size="24" font-weight="700" fill="#D4A853">vystra.in</text>
+  <text x="1104" y="560" font-family="'Segoe UI', system-ui, sans-serif" font-size="22" font-weight="500" fill="#8A8D9E" text-anchor="end">Design that sells. Code that scales.</text>
+</svg>

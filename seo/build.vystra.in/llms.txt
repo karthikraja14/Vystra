@@ -1,0 +1,21 @@
+# BuildVystra
+
+> BuildVystra is a construction management SaaS platform to plan projects, track sites, and manage teams, materials and progress in real time. Available as a web app and mobile app. Built and operated by Vystra (https://vystra.in).
+
+## Key facts
+- Name: BuildVystra
+- Website: https://build.vystra.in
+- Category: Construction management software / project & site tracking SaaS
+- Platforms: Web app, iOS, Android
+- Maker: Vystra — digital product studio (https://vystra.in)
+- Contact: admin@vystra.in · WhatsApp +91 90873 40087
+
+## What it does
+- Plan and organise construction projects
+- Track sites and real-time progress
+- Manage teams, workers, materials and tasks
+- Dashboards and reporting for on-track visibility
+
+## Links
+- Product: https://build.vystra.in
+- Maker (Vystra): https://vystra.in

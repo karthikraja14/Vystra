@@ -3,6 +3,10 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  # Daily run so future-dated blog posts publish automatically and search
+  # engines are re-pinged. 03:00 UTC = 08:30 IST.
+  schedule:
+    - cron: '0 3 * * *'
   workflow_dispatch:
 
 permissions:
@@ -38,3 +42,8 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+      - name: Ping IndexNow (Bing, Yandex, Seznam, etc.)
+        run: |
+          curl -s -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json" \
+            -d '{"host":"vystra.in","key":"8f3c1e7a9b4d42f6a0c5e2d7b6a1f4c9","keyLocation":"https://vystra.in/8f3c1e7a9b4d42f6a0c5e2d7b6a1f4c9.txt","urlList":["https://vystra.in/","https://vystra.in/blog/"]}' || true

@@ -1,0 +1,19 @@
+{
+  "name": "Vystra — Digital Product Studio",
+  "short_name": "Vystra",
+  "description": "High-converting websites, web & mobile apps, and SaaS products for ambitious brands.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#08090E",
+  "theme_color": "#08090E",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

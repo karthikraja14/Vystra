@@ -27,6 +27,7 @@ export default function Footer() {
             <a href="#work" onClick={(e) => { e.preventDefault(); scrollTo('#work') }}>Work</a>
             <a href="#services" onClick={(e) => { e.preventDefault(); scrollTo('#services') }}>Services</a>
             <a href="#pricing" onClick={(e) => { e.preventDefault(); scrollTo('#pricing') }}>Pricing</a>
+            <a href="/blog/">Blog</a>
           </div>
           <div className="footer__col">
             <span className="footer__h">Connect</span>
