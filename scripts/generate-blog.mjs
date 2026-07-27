@@ -178,7 +178,14 @@ function renderIndex(posts) {
     url: `${SITE}/blog/`,
     description: 'Practical guides on web design, conversion, SEO and building digital products that grow revenue.',
     publisher: { '@type': 'Organization', name: BRAND.name, logo: { '@type': 'ImageObject', url: BRAND.logo } },
-    blogPost: posts.map((p) => ({ '@type': 'BlogPosting', headline: p.title, url: p.url, datePublished: new Date(p.date).toISOString() })),
+    blogPost: posts.map((p) => ({
+      '@type': 'BlogPosting',
+      headline: p.title,
+      url: p.url,
+      image: `${SITE}${p.cover}`,
+      datePublished: new Date(p.date).toISOString(),
+      author: { '@type': 'Person', name: p.author },
+    })),
   }
   const body = `
     <a class="back" href="/">← Back to Vystra</a>
